@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="main-block">
-      <div class="logo-block">
+      <div class="logo-block" @click="$router.push ('/')" style="cursor: pointer">
         <img class="logo" src="/icons/kika.svg">
       </div>
       <div class="main-information">

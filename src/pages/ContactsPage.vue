@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="main-block">
-      <div class="logo-block">
+      <div class="logo-block" @click="$router.push ('/')" style="cursor: pointer">
         <img class="logo" src="/icons/kika.svg">
       </div>
       <div class="main-information">
@@ -10,11 +10,11 @@
         <h3>
           <span style="font-size: 30px">CONTACTS</span>
         </h3>
-        <q-btn class="btn-form" outline rounded color="white" label="Let's contact" />
+        <q-btn class="btn-form" outline rounded color="white" label="Let's contact" @click="scrollToFeedback" />
       </div>
     </div>
     <div class="second-block">
-      <div class="second-block-text">
+      <div class="second-block-text" id="feedback">
         <p>
         You can fill out the return application form and I will contact you
         </p>
@@ -30,7 +30,12 @@ import FeedbackForm from "components/FeedbackForm";
 
 export default defineComponent({
   name: 'ContactsPage',
-  components: {FeedbackForm}
+  components: {FeedbackForm},
+  methods: {
+    scrollToFeedback() {
+      document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' });
+    },
+  }
 })
 </script>
 
