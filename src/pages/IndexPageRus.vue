@@ -5,14 +5,14 @@
         <img class="logo" src="/icons/kika.svg">
       </div>
       <div class="main-information">
-        <p>Hi, I'm Kristina and I create unique makeup looks that transform your image.As a makeup artist who specializes in working with celebrities, I can help you achieve a dramatic new look that will turn heads.</p>
+        <p>Привет, меня зовут Кристина, и я создаю уникальный макияж, который преображает ваш образ. Как визажист, специализирующийся на работе со знаменитостями, я могу помочь вам создать эффектный новый образ, который привлечет всеобщее внимание.</p>
       </div>
       <div class="main-information-2">
         <h3><span style="font-family: Oooh Baby, sans-serif;">MAKEUP </span>
           <span style="font-family: Oleo Script, serif;">ARTIST</span>
         </h3>
-        <q-btn class="btn-form" outline rounded color="white" label="Let's contact"
-               @click="$router.push ('/contacts')"/>
+        <q-btn class="btn-form" outline rounded color="white" label="ЗАЯВКА"
+               @click="$router.push ('/ru/contacts')"/>
       </div>
     </div>
     <div class="second-block">
@@ -57,12 +57,11 @@
         </q-carousel>
       </div>
       <div class="second-block-text">
-        <p data-aos="fade-up-right" data-aos-duration="3000" >My name is Christina.
-          For 6 years I have been creating beauty for other people.
-          COMMERCIAL AND NON-COMMERCIAL makeup is my everything.
-          I create random images for filming music videos and commercials.
-          With my makeup you will be irresistible.
-          I create ads for beauty brands.
+        <p data-aos="fade-up-right" data-aos-duration="3000" >Меня зовут Кристина.
+          Уже 6 лет я создаю красоту для других людей.
+          КОММЕРЧЕСКИЙ И НЕКОММЕРЧЕСКИЙ макияж - мое все.
+          Я создаю уникальные образы для съемок музыкальных клипов и рекламных роликов.
+          С моим макияжем вы будете неотразимы.
         </p>
       </div>
     </div>
@@ -165,7 +164,6 @@ export default defineComponent({
   .second-block-text p{
     padding: 40px;
     font-size: 20px;
-    font-family: Oooh baby;
   }
   @media screen and (max-width: 700px) {
     .second-block{

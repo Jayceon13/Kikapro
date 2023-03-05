@@ -16,18 +16,19 @@
     <div class="second-block">
       <h3>MAKEUP</h3>
       <div class="second-block-text">
+        <p><span>Express look</span><span style="text-align: right">100$ | 1850TL</span></p>
         <p><span>Look (make-up + styling)</span><span style="text-align: right">150$ | 2900TL</span></p>
         <p><span>Make-up (all kinds of make-up)</span><span style="text-align: right">100$ | 1900TL</span></p>
         <p><span>Hair styling</span><span style="text-align: right">50$ | 950TL</span></p>
         <p><span>Departure within the city at no extra charge</span><span></span></p>
         <p><span>Beyond separate calculations</span><span></span></p>
         <p><span>Early check out | Late check out +</span><span style="text-align: right">50$ | 950TL</span></p>
-        <p><span>From 9-22 the price does not change</span><span style="text-align: right">100$ | 1900TL</span></p>
+        <p><span>From 9-22 the price does not change</span><span style="text-align: right"></span></p>
         <p><span>Online | offline consultation</span><span style="text-align: right">50$ | 950TL</span></p>
-        <p><span>Online makeup lessons one lesson</span><span style="text-align: right">100$ | 1900TL</span></p>
+        <p><span>Online makeup lessons one lesson</span><span style="text-align: right">150$ | 2900TL</span></p>
         <p><span>All lessons (5 lessons)  without feedback</span><span style="text-align: right">350$ | 6800TL</span></p>
         <p><span>All lessons (5 lessons)  With feedback</span><span style="text-align: right">500$ | 9600TL</span></p>
-        <p><span>Offline makeup lessons (one lesson )</span><span style="text-align: right">150$ | 2900TL</span></p>
+        <p><span>Offline makeup lessons (one lesson )</span><span style="text-align: right">200$ | 3800TL</span></p>
         <p><span>All types of make-up  5 days</span><span style="text-align: right">700$ | 13500TL</span></p>
       </div>
     </div>
@@ -76,6 +77,7 @@ export default defineComponent({
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 40px;
 }
 .main-information-2 h3{
   font-style: italic;
@@ -110,7 +112,6 @@ export default defineComponent({
   color: white;
 }
 .second-block-text p{
-  font-family: "Oooh baby";
   font-size: 30px;
   display: flex;
   justify-content: space-between;

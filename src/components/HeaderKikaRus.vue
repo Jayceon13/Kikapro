@@ -1,10 +1,10 @@
 <template>
   <div class="header-block">
     <div class="change-language">
-      <div class="rus-language" @click="$router.push ('/ru')">
+      <div class="rus-language" >
         RU
       </div>
-      <div class="eng-language">
+      <div class="eng-language" @click="$router.push ('/')">
         EN
       </div>
     </div>
@@ -19,29 +19,29 @@
     <div class="block-menu"
          v-if="showBurgerMenu"
          @click="blockBurgerMenu">
-      <div @click="() => {$router.push ('/'); showBurgerMenu}"
+      <div @click="() => {$router.push ('/ru'); showBurgerMenu}"
            class="block-about"
            style="cursor: pointer"
       >
-        HOME
+        ГЛАВНАЯ
       </div>
       <div class="second-block-menu">
-        <div @click="() => {$router.push ('/services'); showBurgerMenu}"
+        <div @click="() => {$router.push ('/ru/services'); showBurgerMenu}"
              class="block-examples">
-          SERVICES
+          УСЛУГИ
         </div>
-        <div @click="() => {$router.push ('/contacts'); showBurgerMenu}"
+        <div @click="() => {$router.push ('/ru/contacts'); showBurgerMenu}"
              class="block-contacts"
              style="cursor: pointer"
         >
-          CONTACTS
+          КОНТАКТЫ
         </div>
       </div>
     </div>
   </transition>
   <transition name="bg-block">
-  <div class="block-background" v-if="showBurgerMenu">
-  </div>
+    <div class="block-background" v-if="showBurgerMenu">
+    </div>
   </transition>
 </template>
 
@@ -78,10 +78,10 @@ export default {
 .eng-language{
   margin-left: 15px;
   cursor: pointer;
-  color: grey;
 }
 .rus-language{
   cursor: pointer;
+  color: grey;
 }
 .block-home img:hover{
   background-color: rgba(200, 200, 200, 0.5);

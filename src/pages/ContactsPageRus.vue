@@ -8,29 +8,29 @@
       </div>
       <div class="main-information-2">
         <h3>
-          <span style="font-size: 30px">CONTACTS</span>
+          <span style="font-size: 30px">КОНТАКТЫ</span>
         </h3>
-        <q-btn class="btn-form" outline rounded color="white" label="Let's contact" @click="scrollToFeedback" />
+        <q-btn class="btn-form" outline rounded color="white" label="ЗАПИСЬ" @click="scrollToFeedback" />
       </div>
     </div>
     <div class="second-block">
       <div class="second-block-text" id="feedback">
         <p>
-        You can fill out the return application form and I will contact you
+          Вы можете заполнить форму обратной заявки и я свяжусь с вами
         </p>
       </div>
-      <feedback-form></feedback-form>
+      <feedback-form-rus></feedback-form-rus>
     </div>
   </q-page>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
-import FeedbackForm from "components/FeedbackForm";
+import FeedbackFormRus from "components/FeedbackFormRus";
 
 export default defineComponent({
   name: 'ContactsPage',
-  components: {FeedbackForm},
+  components: {FeedbackFormRus},
   methods: {
     scrollToFeedback() {
       document.getElementById('feedback').scrollIntoView({ behavior: 'smooth' });
