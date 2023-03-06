@@ -165,7 +165,6 @@ export default defineComponent({
   .second-block-text p{
     padding: 40px;
     font-size: 20px;
-    font-family: Oooh baby;
   }
   @media screen and (max-width: 700px) {
     .second-block{

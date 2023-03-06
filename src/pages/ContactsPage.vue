@@ -79,7 +79,6 @@ export default defineComponent({
   align-items: center;
 }
 .second-block-text p{
-  font-family: "Oooh baby";
   font-size: 35px;
   display: flex;
   justify-content: space-between;
