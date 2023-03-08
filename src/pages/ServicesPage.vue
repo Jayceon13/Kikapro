@@ -10,7 +10,8 @@
         <h3>
           <span style="font-size: 30px">SERVICES</span>
         </h3>
-        <q-btn class="btn-form" outline rounded color="white" label="Let's contact" />
+        <q-btn class="btn-form" outline rounded color="white" label="Let's contact"
+               @click="$router.push ('/contacts')"/>
       </div>
     </div>
     <div class="second-block">
