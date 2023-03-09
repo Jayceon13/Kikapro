@@ -85,7 +85,7 @@ export default defineComponent({
 
 <style scoped>
   .main-block{
-    height: 110vh;
+    height: 120vh;
     color: white;
     display: flex;
     flex-flow: column;
@@ -106,7 +106,7 @@ export default defineComponent({
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 130px;
   }
   .main-information-2 h3{
     font-style: italic;
@@ -127,7 +127,7 @@ export default defineComponent({
     height: 200px;
   }
   .second-block{
-    height: 110vh;
+    height: 120vh;
     width: 100vw;
     border-top-right-radius: 100px;
     border-top-left-radius: 100px;
