@@ -143,7 +143,12 @@ export default defineComponent({
     font-size: 17px;
   }
   .second-block{
-    height: 130vh;
+    height: auto;
+    padding-bottom: 80px;
+  }
+  .third-block{
+    height: auto;
+    padding-bottom: 80px;
   }
 }
 .logo-block{
